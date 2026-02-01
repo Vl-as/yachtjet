@@ -42,8 +42,7 @@ html {
 
 body {
   font-family: 'Inter', sans-serif;
-  /* background-color: var(--color-navy-dark); */
-  background-color: red;
+  background-color: var(--color-navy-dark);
 }
 
 .visually-hidden {

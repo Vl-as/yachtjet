@@ -1,0 +1,122 @@
+.hero {
+  padding-top: 260px;
+  padding-bottom: 300px;
+  background-image:
+    linear-gradient(
+      to top,
+      rgba(17, 19, 31, 1) 15%,
+      rgba(17, 19, 31, 0.39) 75%,
+      rgba(17, 19, 31, 0) 98%
+    ),
+    url(../../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero_title {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--color-white-soft);
+}
+.hero_text {
+  margin-bottom: 40px;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.16667;
+  text-align: center;
+  color: rgba(251, 251, 251, 0.7);
+}
+.hero_btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 15px;
+  padding: 0 10px;
+  min-width: 141px;
+  min-height: 46px;
+  background-color: var(--color-teal-ocean);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  color: var(--color-white-soft);
+
+  transition:
+    background-color 0.3s ease-in-out,
+    color 0.3s ease-in-out;
+}
+
+.hero_btn:focus-visible {
+  background-color: var(--color-white-soft);
+  color: var(--color-teal-ocean);
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding: 280px 0;
+  }
+  .hero_title {
+    margin-bottom: 24px;
+    font-size: 70px;
+    letter-spacing: 0.02em;
+  }
+  .hero_text {
+    max-width: 600px;
+    margin: 0 auto 48px auto;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  .hero_btn {
+    padding: 0 40px;
+    min-height: 52px;
+
+    font-size: 18px;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero {
+    padding-top: 235px;
+    padding-bottom: 215px;
+  }
+
+  .hero_title {
+    font-size: 80px;
+    max-width: 1000px;
+  }
+}
+
+@media screen and (min-resolution: 2x) {
+  .hero {
+    background-image:
+      linear-gradient(
+        to top,
+        rgba(17, 19, 31, 1) 15%,
+        rgba(17, 19, 31, 0.39) 75%,
+        rgba(17, 19, 31, 0) 98%
+      ),
+      url(../../images/hero-bg@2.jpg);
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .hero_btn:hover {
+    background-color: var(--color-white-soft);
+    color: var(--color-teal-ocean);
+  }
+}

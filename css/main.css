@@ -2,3 +2,5 @@
 @import url(./base/base.css);
 
 @import url(./layouts/header.css);
+@import url(./sections/hero.css);
+@import url(./sections/about.css);
