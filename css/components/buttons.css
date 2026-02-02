@@ -1,0 +1,63 @@
+.btn-rental {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 15px;
+  padding: 0 10px;
+  min-width: 141px;
+  min-height: 46px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  color: var(--color-white-soft);
+
+  transition:
+    background-color 0.3s ease-in-out,
+    color 0.3s ease-in-out,
+    border-color 0.3s ease-in-out;
+}
+
+.btn-rental-primary {
+  background-color: var(--color-teal-ocean);
+}
+
+.btn-rental-outline {
+  border: 1px solid rgba(251, 251, 251, 0.35);
+  background-color: transparent;
+}
+
+.btn-rental-primary:focus-visible {
+  background-color: var(--color-white-soft);
+  color: var(--color-teal-ocean);
+}
+.btn-rental-outline:focus-visible {
+  background-color: var(--color-white-soft);
+  color: var(--color-teal-ocean);
+  border-color: var(--color-white-soft);
+}
+
+@media screen and (min-width: 768px) {
+  .btn-rental {
+    padding: 0 40px;
+    min-height: 52px;
+
+    font-size: 18px;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .btn-rental-primary:hover {
+    background-color: var(--color-white-soft);
+    color: var(--color-teal-ocean);
+  }
+  .btn-rental-outline:hover {
+    background-color: var(--color-white-soft);
+    color: var(--color-teal-ocean);
+    border-color: var(--color-white-soft);
+  }
+}
