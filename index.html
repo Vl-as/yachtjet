@@ -328,6 +328,59 @@
           </div>
         </div>
       </section>
+      <section class="rent">
+        <div class="container rent-inner">
+          <div class="rent-info">
+            <h2 class="rent-title">Rent a yacht now</h2>
+            <form class="rent-form">
+              <label class="visually-hidden" for="name">Full name</label>
+              <input
+                class="rent-input"
+                id="name"
+                type="text"
+                name="name"
+                placeholder="Full Name"
+                required
+              />
+              <label class="visually-hidden" for="email">Email</label>
+              <input
+                class="rent-input"
+                id="email"
+                type="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
+              <label class="visually-hidden" for="phone">Phone number</label>
+              <input
+                class="rent-input"
+                id="phone"
+                type="tel"
+                name="phone"
+                placeholder="Phone number"
+                required
+              />
+              <label for="comment" class="visually-hidden">Comment</label>
+              <textarea
+                name="comment"
+                id="comment"
+                class="rent-textarea"
+                placeholder="Comment"
+              ></textarea>
+              <button type="submit" class="rent-btn">Send</button>
+            </form>
+          </div>
+          <img
+            srcset="./images/rent.jpg 1x, ./images/rent@2.jpg 2x"
+            src="./images/rent.jpg"
+            alt="Modern luxury yacht sailing on calm water near mountainous coastline"
+            class="rent-img"
+            width="335"
+            height="412"
+            loading="lazy"
+          />
+        </div>
+      </section>
     </main>
     <script src="./js/mobile-menu.js"></script>
   </body>
