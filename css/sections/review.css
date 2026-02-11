@@ -1,0 +1,118 @@
+.review {
+  padding: 40px 0 80px;
+}
+.review-title {
+  margin-bottom: 25px;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--color-white-soft);
+}
+.review-text {
+  margin-bottom: 40px;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--color-white-soft);
+  opacity: 0.4;
+}
+
+.review-item:not(:first-child) {
+  display: none;
+}
+
+.review-item {
+  padding: 32px 16px;
+  border-radius: 24px;
+  background-color: var(--color-white-soft);
+}
+
+.review-avatar {
+  margin: 0 auto 24px auto;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.review-name {
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.1112;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--color-black-deep);
+}
+.review-experience {
+  font-size: 16px;
+  line-height: 1.375;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(4, 3, 6, 0.4);
+}
+
+@media screen and (min-width: 768px) {
+  .review {
+    padding: 75px 0 150px;
+  }
+
+  .review-title {
+    font-size: 48px;
+  }
+  .review-text {
+    margin: 0 auto 75px auto;
+    font-size: 14px;
+    line-height: 1.28571;
+    max-width: 570px;
+  }
+
+  .review-list {
+    display: flex;
+    gap: 32px;
+  }
+
+  .review-item:nth-child(2) {
+    display: block;
+  }
+
+  .review-item {
+    width: calc((100% - 32px) / 2);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .review-title {
+    max-width: 854px;
+    margin: 0 auto 25px auto;
+  }
+
+  .review-list {
+    gap: 26px;
+  }
+
+  .review-item:nth-child(3) {
+    display: block;
+    padding: 32px 42px;
+  }
+
+  .review-item {
+    padding: 32px 28px;
+    width: calc((100% - 52px) / 3);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .review-list {
+    gap: 32px;
+  }
+
+  .review-item {
+    padding: 32px 36px;
+    width: calc((100% - 64px) / 3);
+  }
+
+  .review-item:nth-child(3) {
+    padding: 32px 50px;
+  }
+}
