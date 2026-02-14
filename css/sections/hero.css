@@ -20,7 +20,7 @@
   align-items: center;
 }
 
-.hero_title {
+.hero-title {
   margin-bottom: 20px;
   font-weight: 500;
   font-size: 32px;
@@ -29,7 +29,7 @@
   text-align: center;
   color: var(--color-white-soft);
 }
-.hero_text {
+.hero-text {
   margin-bottom: 40px;
   font-weight: 300;
   font-size: 12px;
@@ -42,12 +42,12 @@
   .hero {
     padding: 280px 0;
   }
-  .hero_title {
+  .hero-title {
     margin-bottom: 24px;
     font-size: 70px;
     letter-spacing: 0.02em;
   }
-  .hero_text {
+  .hero-text {
     max-width: 600px;
     margin: 0 auto 48px auto;
     font-size: 16px;
@@ -61,7 +61,7 @@
     padding-bottom: 215px;
   }
 
-  .hero_title {
+  .hero-title {
     font-size: 80px;
     max-width: 1000px;
   }

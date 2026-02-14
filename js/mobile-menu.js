@@ -7,3 +7,13 @@ burgerBtn.addEventListener('click', () => {
   burgerBtn.classList.toggle('is-open', isOpen);
   body.classList.toggle('no-scroll', isOpen);
 });
+
+const mobileLinks = mobileMenu.querySelectorAll('a');
+
+mobileLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    mobileMenu.classList.remove('is-open');
+    burgerBtn.classList.remove('is-open');
+    body.classList.remove('no-scroll');
+  });
+});

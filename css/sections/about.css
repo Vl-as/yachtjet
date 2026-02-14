@@ -7,6 +7,7 @@
   padding-top: 40px;
   border-radius: 24px;
   background-color: var(--color-white-soft);
+  overflow: hidden;
 }
 
 .about-header {

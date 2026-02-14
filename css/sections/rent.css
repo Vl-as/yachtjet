@@ -1,5 +1,6 @@
 .rent {
   padding: 40px 0;
+  overflow: hidden;
 }
 .rent-info {
   margin-bottom: 80px;

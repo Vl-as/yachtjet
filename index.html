@@ -18,6 +18,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/main.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <div class="mobile-menu">
@@ -25,13 +26,13 @@
         <nav class="mobile-nav">
           <ul class="mobile-nav-list">
             <li class="mobile-nav-item">
-              <a href="/" class="nav-link">About</a>
+              <a href="#about" class="nav-link">About</a>
             </li>
             <li class="mobile-nav-item">
-              <a href="/" class="nav-link">Yachts</a>
+              <a href="#yachts" class="nav-link">Yachts</a>
             </li>
             <li class="mobile-nav-item">
-              <a href="/" class="nav-link">Reviews</a>
+              <a href="#reviews" class="nav-link">Reviews</a>
             </li>
           </ul>
         </nav>
@@ -67,13 +68,13 @@
           <nav class="header-nav">
             <ul class="header-nav-list">
               <li class="header-nav-item">
-                <a href="/" class="nav-link">About</a>
+                <a href="#about" class="nav-link">About</a>
               </li>
               <li class="header-nav-item">
-                <a href="/" class="nav-link">Yachts</a>
+                <a href="#yachts" class="nav-link">Yachts</a>
               </li>
               <li class="header-nav-item">
-                <a href="/" class="nav-link">Reviews</a>
+                <a href="#reviews" class="nav-link">Reviews</a>
               </li>
             </ul>
           </nav>
@@ -100,7 +101,7 @@
               </a>
             </li>
           </ul>
-          <button type="button" class="header-burger-btn">
+          <button type="button" class="header-burger-btn" aria-label="Menu">
             <span class="header-burger-line"></span
             ><span class="header-burger-line"></span>
           </button>
@@ -110,26 +111,32 @@
     <main>
       <section class="hero">
         <div class="container hero-inner">
-          <h1 class="hero_title">
+          <h1 class="hero-title" data-aos="fade-up">
             Explore the High Seas with Our Luxury Yacht Rentals
           </h1>
-          <p class="hero_text">
+          <p class="hero-text" data-aos="fade-up" data-aos-delay="150">
             Experience the freedom and luxury of yachting on the open seas.
             Choose from our top-of-the-line yachts and embark on an
             unforgettable journey surrounded by breathtaking views and
             state-of-the-art amenities.
           </p>
-          <a href="#" class="btn-rental btn-rental-primary">Yacht rental</a>
+          <a
+            href="#"
+            class="btn-rental btn-rental-primary"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            >Yacht rental</a
+          >
         </div>
       </section>
-      <section class="about">
+      <section class="about" id="about">
         <div class="container">
           <div class="about-inner">
             <div class="about-header">
-              <h2 class="about-title">
+              <h2 class="about-title" data-aos="fade-right">
                 YachtJet fleet is here to take you on the ultimate adventure
               </h2>
-              <div class="about-text-wrapper">
+              <div class="about-text-wrapper" data-aos="fade-left">
                 <p class="about-lead">
                   From spacious decks to state-of-the-art technology, our yachts
                   are designed to provide the perfect blend of luxury and
@@ -144,7 +151,11 @@
                 </p>
               </div>
             </div>
-            <picture class="about-media">
+            <picture
+              class="about-media"
+              data-aos="zoom-in-up"
+              data-aos-delay="150"
+            >
               <source
                 srcset="
                   ./images/about-yacht-l.png   1x,
@@ -172,13 +183,13 @@
           </div>
         </div>
       </section>
-      <section class="catalog">
+      <section class="catalog" id="yachts">
         <div class="container catalog-inner">
-          <h2 class="catalog-title">
+          <h2 class="catalog-title" data-aos="fade-up">
             Choose your dream yacht and sail away into the sunset
           </h2>
           <div class="catalog-wrapper">
-            <div class="catalog-card">
+            <div class="catalog-card" data-aos="fade-up" data-aos-delay="150">
               <img
                 srcset="
                   ./images/yacht-arrow.png   1x,
@@ -212,7 +223,11 @@
                 </div>
               </div>
             </div>
-            <div class="catalog-card catalog-card-benetti">
+            <div
+              class="catalog-card catalog-card-benetti"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
               <img
                 srcset="
                   ./images/yacht-benetti.png   1x,
@@ -246,7 +261,11 @@
                 </div>
               </div>
             </div>
-            <div class="catalog-card catalog-card-belle">
+            <div
+              class="catalog-card catalog-card-belle"
+              data-aos="fade-up"
+              data-aos-delay="450"
+            >
               <img
                 srcset="
                   ./images/yacht-belle.png   1x,
@@ -281,14 +300,20 @@
               </div>
             </div>
           </div>
-          <a href="#" class="btn-rental btn-rental-outline">Yacht rental</a>
+          <a
+            href="#"
+            class="btn-rental btn-rental-outline"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            >Yacht rental</a
+          >
         </div>
       </section>
       <section class="features">
         <div class="container">
           <h2 class="visually-hidden">Things to do on a yacht</h2>
           <div class="features-wrapper">
-            <ul class="features-list">
+            <ul class="features-list" data-aos="fade-right">
               <li class="features-item">
                 <span class="features-index">01</span>
                 <p class="features-description">
@@ -324,6 +349,7 @@
               loading="lazy"
               width="335"
               height="424"
+              data-aos="fade-left"
             />
           </div>
         </div>
@@ -331,8 +357,8 @@
       <section class="rent">
         <div class="container rent-inner">
           <div class="rent-info">
-            <h2 class="rent-title">Rent a yacht now</h2>
-            <form class="rent-form">
+            <h2 class="rent-title" data-aos="fade-left">Rent a yacht now</h2>
+            <form class="rent-form" data-aos="fade-left">
               <label class="visually-hidden" for="name">Full name</label>
               <input
                 class="rent-input"
@@ -378,22 +404,23 @@
             width="335"
             height="412"
             loading="lazy"
+            data-aos="fade-right"
           />
         </div>
       </section>
-      <section class="review">
+      <section class="review" id="reviews">
         <div class="container">
-          <h2 class="review-title">
+          <h2 class="review-title" data-aos="fade-up">
             YachtJet take pride in providing the best possible service and
             experience to our customers
           </h2>
-          <p class="review-text">
+          <p class="review-text" data-aos="fade-up" data-aos-delay="150">
             Our customers have enjoyed unforgettable moments on our yachts.
             Don't just take our word for it - read on to find out what they have
             to say about their journey with us.
           </p>
           <ul class="review-list">
-            <li class="review-item">
+            <li class="review-item" data-aos="fade-up" data-aos-delay="300">
               <img
                 srcset="./images/john-wax.png 1x, ./images/john-wax@2.png 2x"
                 src="./images/john-wax.png"
@@ -411,7 +438,7 @@
                 everything.
               </p>
             </li>
-            <li class="review-item">
+            <li class="review-item" data-aos="fade-up" data-aos-delay="450">
               <img
                 srcset="
                   ./images/victoria-romashenko.png   1x,
@@ -432,7 +459,7 @@
                 friendly.
               </p>
             </li>
-            <li class="review-item">
+            <li class="review-item" data-aos="fade-up" data-aos-delay="600">
               <img
                 srcset="
                   ./images/ihor-trachuk.png   1x,
@@ -464,13 +491,13 @@
               <a href="/" class="logo footer-logo">yachtjet</a>
               <ul class="footer-nav-list">
                 <li class="footer-nav-item">
-                  <a href="#" class="footer-nav-link">About</a>
+                  <a href="#about" class="footer-nav-link">About</a>
                 </li>
                 <li class="footer-nav-item">
-                  <a href="#" class="footer-nav-link">Yachts</a>
+                  <a href="#yachts" class="footer-nav-link">Yachts</a>
                 </li>
                 <li class="footer-nav-item">
-                  <a href="#" class="footer-nav-link">Reviews</a>
+                  <a href="#reviews" class="footer-nav-link">Reviews</a>
                 </li>
               </ul>
             </nav>
@@ -498,7 +525,7 @@
               </li>
             </ul>
           </div>
-          <p class="footer-text">
+          <p class="footer-text" data-aos="fade-up">
             No matter which yacht you choose, our experienced crew will ensure
             that your journey is smooth and enjoyable.
           </p>
@@ -510,5 +537,19 @@
       </div>
     </footer>
     <script src="./js/mobile-menu.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        AOS.init({
+          duration: 800,
+          once: true,
+          easing: 'ease-in-out',
+        });
+
+        window.addEventListener('load', () => {
+          AOS.refreshHard();
+        });
+      });
+    </script>
   </body>
 </html>
