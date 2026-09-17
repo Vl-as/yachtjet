@@ -72,14 +72,6 @@ yachtjet/
 
 ---
 
-## 📸 Screenshots
-
-<p align="center">
-  <img src="add-your-screenshot-link" width="900"/>
-</p>
-
----
-
 ## 🎯 What I Learned
 
 While developing this project, I improved my skills in:
